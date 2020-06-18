@@ -1,2 +1,2 @@
-# attendee_page_UI
+# attendee_page_ui
 UI part of the Attendee Page
