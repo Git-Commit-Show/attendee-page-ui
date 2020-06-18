@@ -1,4 +1,4 @@
-[![HitCount](http://hits.dwyl.com/Git-Commit-Show/landing-page.svg)](http://hits.dwyl.com/Git-Commit-Show/landing-page)
+[![HitCount](http://hits.dwyl.com/Git-Commit-Show/attendee-page-ui.svg)](http://hits.dwyl.com/Git-Commit-Show/attendee-page-ui)
 
 # GitCommitShow 2020 Attendee Page UI
 
