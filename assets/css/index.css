@@ -95,9 +95,86 @@ body {
 	background-color: #131313;
 }
 /*NAVBAR CSS ENDS*/
+/*LIVE MASTERCLASS SECTION*/
+#live-masterclass {
+	padding-top: 78px;
+}
+#l-m-header{
+	display: block;
+	padding-left: 65px;
+	padding-top: 60px;
+}
+#l-m-header > img  {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	position: relative;
+	bottom: 6px;
+}
+#l-m-header > p {
+	display: inline-block;
+	font-family: "Work Sans", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 42px;
+	color: #EFEFEF;
+}
+#l-m-video {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#l-m-video > iframe {
+	height: 495px;
+	padding-left: 65px;
+	flex: 1 1 796px;
+}
+#iframe-text {
+	display: flex;
+    flex-direction: column;
+    flex: 0 1 234px;
+    height: 495px;
+    border: 1px solid #EFEFEF;
+    margin-left: 25px;
+    margin-right: 117px;
+    padding: 10px;
+}
+#iframe-text > p{
+	font-family: "Work Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #EFEFEF;
+}
+.iframe-text-ques {
+	color: #ccc;
+}
+.iframe-text-status {
+	color: #ccc;
+}
+#iframe-text-form{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	bottom: 0;
+}
+#iframe-text-form textarea {
+	background-color: inherit;
+	color: #EFEFEF;
+	text-align: left;
+	resize: none;
+}
+#iframe-text-form input[type=submit]{
+	width: 120px;
+    margin: auto;
+    margin-top: 8px;
+}
+/*LIVE MASTERCLASS SECTION END*/
 /*UPCOMING SESSION*/
 #u-session {
-	padding-top: 78px;
+	padding-top: 10px;
 }
 #schedule-date {
 	background: #e71d2b;
@@ -424,115 +501,3 @@ body {
 	}
 }
 /*FOOTER CSS END*/
-
-
-
-/* 
-UPPER PART CSS */
-
-
-.header{
-	
-	padding-top: 5em;
-	padding-bottom: 6rem;
-	}
-	
-	.headerinfo{
-		display: inline-block;
-		width: 24px;
-	height: 24px;
-	padding-left: 3em;
-	
-	font-family: Work Sans;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 36px;
-	line-height: 42px;
-	
-	color: #EFEFEF;
-	}
-
-
-.container{
-	display: flex;
-}
-
-.box-1{
-	flex:4;
-	
-}
-.box-2{
-	flex:1;
-}
-
-.box{
-	width: 315px;
-height: 538px;
-	border: 2px solid #EFEFEF;
-box-sizing: border-box;
-}
-
-
-.midheader{
-	font-family: Work Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 42px;
-
-color: #EFEFEF;
-width: 833px;
-height: 42px;
-}
-
-
-.container-2{
-	display: flex;
-}
-.cbox-1{
-	flex:1;
-}
-.cbox-2{
-	flex:1;
-}
-.cbox-3{
-	flex:1;
-}
-
-.icon{
-
-
-
-font-family: Work Sans;
-font-style: normal;
-font-weight: 900;
-font-size: 72px;
-line-height: 84px;
-
-color: #EFEFEF;
-
-}
-
-.bot-button{
-	width: 286px;
-height: 43px;
-left: 60px;
-top: 1006px;
-
-background: #EFEFEF;
-/* Bottom Button Drop Shadow */
-
-box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.5);
-border-radius: 1px;
-}
-
-.btn-text{
-	"font-family: Work Sans;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 18px;
-            line-height: 21px;
-            text-align: center;
-            
-            color: #141414;"
-}
