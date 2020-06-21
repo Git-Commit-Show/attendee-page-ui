@@ -158,20 +158,55 @@ body {
 }
 #iframe-text-form{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
 }
 #iframe-text-form textarea {
 	background-color: inherit;
-	color: #EFEFEF;
 	text-align: left;
 	resize: none;
+	font-family: "Work Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: #EFEFEF ;
 }
-#iframe-text-form input[type=submit]{
-	width: 120px;
-    margin-top: 8px;
+.iframe-button-div a {
+	background: #efefef;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-family: "Work Sans", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	color: #141414;
+	text-decoration: none;
+	margin-top: 5px !important;
+	margin: 2px;
 }
-
+.iframe-button-div a:hover, .iframe-button-div a:focus{
+    background: #BCBCBC !important;
+    -webkit-transition: background .6s ease;
+    -o-transition: background .6s ease;
+    transition: background .6s ease;
+}
+#iframe-text-form > input[type=submit]{
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: inherit;
+}
+#iframe-text-form > span {
+	display: block;
+	width: fit-content;
+}
+#iframe-text-form > span > img {
+	margin-top: 5px !important;
+	margin: 2px;
+	height: 18px;
+	cursor: pointer;
+}
 #l-m-text {
 	display: flex;
 	flex-direction: row;
@@ -463,14 +498,6 @@ body {
 .button-div a p {
 	position: relative;
 	top: 6px;
-}
-.button-p {
-	font-family: "Work Sans", sans-serif;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 38px;
-	color: #EFEFEF;
 }
 .button-div a:hover, .button-div a:focus{
     background: #BCBCBC !important;
