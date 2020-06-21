@@ -53,12 +53,7 @@
     		<p>Live Masterclass</p>
     	</div>
 		<div id="l-m-video">
-			<iframe class="carousel-iframe-size" src="https://www.youtube.com/embed/	NiBwIddeCgA" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-            <param name="allowFullScreen" value="true" />
-            <param name="allowscriptaccess" value="false" />
+            <div id="twitch-embed"></div>
             <div id="iframe-text">
             	<p>
             		<span class="iframe-text-ques">Your Question </span>
@@ -131,7 +126,7 @@
 					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do .</p>
 				</div>
 				<div id="l-m-text-div3">
-					<button class="l-m-text-button" onclick="location.href='https://meet.gitcommit.show'" type="button"> 
+					<button class="l-m-text-button" onclick="window.open('https://meet.gitcommit.show');" type="button"> 
 						<img src="assets/img/handshake.png">
 						<p>Meet Attendees F2F</p>
 					</button>
@@ -150,7 +145,10 @@
             <div class="jun27-items">
                 <div class="jun27-child">
                     <div>
-                        <p class="speakers-time">11:00</p>
+                        <p class="speakers-time">
+                            Saturday <br>
+                            11:00
+                        </p>
 
                         <hr class="jun27-hr">
                         <a href="https://www.linkedin.com/in/scotthanselman/" title="Add me on Linkedin">
@@ -201,18 +199,21 @@
                 </div>
                 <div class="jun27-child">
                     <div>
-                        <p class="speakers-time">12:00</p>
+                        <p class="speakers-time">
+                            Saturday <br>
+                            12:00
+                        </p>
                         <hr class="jun27-hr">
-                        <a href="https://www.linkedin.com/in/scotthanselman/" title="Add me on Linkedin">
-                            <img class="speakers-icon" src="assets/img/speakers/scott-hanselman.png">
+                        <a href="https://www.linkedin.com/in/saarthakvats/" title="Add me on Linkedin">
+                            <img class="speakers-icon" src="assets/img/speakers/saarthak-vats.jpg">
                         </a>
                     </div>
                     <div>
-                        <p class="speakers-data-1">Building your brand online as a developer</p>
+                        <p class="speakers-data-1">Enabling speed and confidence with "testing"</p>
                         <p class="speakers-data-2"><b>/masterclass</b></p>
-                        <p class="speakers-data-3">SCOTT HANSELMANN</p>
-                        <p class="speakers-data-4"> Program Manager at Microsoft, Working remotely for 10+ yrs. <br>
-                            #PersonalBranding #Networking</p>
+                        <p class="speakers-data-3">SARTHAK VATS</p>
+                        <p class="speakers-data-4">VP Engineering at Noon <br> #Testing
+                        </p>
                         <div class='button-div'>
                 			<div class="dropdown btn-group">
                     			<a class="btn dropdown-toggle pl-5 pr-5" data-toggle="dropdown" href="#">
@@ -262,7 +263,7 @@
         </form>	
     </div>
     <div id="register-button-3" class="text-center">
-        <button data-nolt="button" onclick="location.href='https://gcs.nolt.io'" type="button">
+        <button data-nolt="button" onclick="window.open('https://gcs.nolt.io');" type="button">
             SUBMIT FEEDBACK
         </button>
     </div>
@@ -363,6 +364,19 @@
     </div>    
     <!---FOOTER SECTION END--->
     <!-- SCRIPTS -->
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script> 
+    <script type="text/javascript">
+      var embed = new Twitch.Embed("twitch-embed", {
+        width: 796,
+        height: 495,
+        channel: "monstercat",
+        layout: "video",
+        autoplay: false,
+        // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+        parent: ["twitch.gitcommit.show"]
+      });
+    </script>
     <script async src="https://cdn.nolt.io/widgets.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
